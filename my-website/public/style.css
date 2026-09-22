@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    height: 70px;
+    background: #111827;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+}
+
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color: white;
+}
+
+
+.hero-content {
+    max-width: 700px;
+}
+
+
+.hero h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.btn {
+    display: inline-block;
+
+    background: white;
+    color: #2563eb;
+
+    padding: 14px 30px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.features {
+    display: flex;
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 60px 8%;
+}
+
+
+.card {
+    background: white;
+
+    padding: 30px;
+
+    width: 300px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    text-align: center;
+}
+
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   FORMS
+========================= */
+
+.form-container {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+
+form {
+    background: white;
+
+    width: 420px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+
+form h1 {
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+
+.form-subtitle {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+label {
+    display: block;
+
+    margin-top: 15px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+textarea {
+    height: 120px;
+
+    resize: vertical;
+}
+
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   LOGIN INFORMATION
+========================= */
+
+.login-info {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background: #f3f4f6;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    padding: 60px 8%;
+
+    text-align: center;
+}
+
+
+.dashboard h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.dashboard > p {
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+
+.dashboard-cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.dashboard-card {
+    width: 280px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+
+.dashboard-card h2 {
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .features,
+    .dashboard-cards {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
